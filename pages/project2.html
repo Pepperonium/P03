@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="../styles/main.css" rel="stylesheet">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <title>Project 2 By Ryan</title>
+    <title>Project 1 By Ryan</title>
 </head>
 <body>
     <header>
@@ -16,33 +16,85 @@
                 </a>
                 <ul>
                 <li><a href="../index.html#projects">Projects</a></li>
-                <li><a href="../pages/bio.html">Bio</a></li>
+                <li><a href="bio.html">Bio</a></li>
                 </ul>
             </nav>
             </section>
     </header>
     <main>
-        <h1>Intergrated Onboarding Guide</h1>
-        <section class="project-description">
-            <h2>What is this?</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec scelerisque nisl velit, vel vestibulum velit feugiat vel. Etiam in tellus et arcu egestas condimentum. Aliquam erat volutpat. Suspendisse potenti. Proin sed fermentum nunc. Morbi congue, augue eget facilisis dignissim, velit velit sagittis velit, quis tristique quam elit eu quam. Duis et elit eget dolor malesuada sollicitudin. Vivamus vehicula massa ac urna feugiat, non aliquam eros placerat.</p>
-        </section>
-        <section class="project-screenshots">
-            <h2>Project Screenshots</h2>
-            <div class="screenshot-grid">
-                <img src="screenshot1.png" alt="Screenshot 1">
-                <img src="screenshot2.png" alt="Screenshot 2">
-                <img src="screenshot3.png" alt="Screenshot 3">
-                <img src="screenshot4.png" alt="Screenshot 4">
+        <h1>Headroom</h1>
+        <section class="container" id="project-description">
+            <div data-aos="fade-up" data-aos-anchor-placement="center-bottom"></div>
+                <h2>What is this?</h2>
+                <p>Headroom is for engineers, musicians, and those in the audio industry. Intended as a mediating tool to ease the organizational and transactional facets of studio recording & performing, specifically, Headroom allows for users to create studio listings, book studios, rent equipment, and access studio recordings through file centralization. </p>
             </div>
         </section>
-        <section class="project-tech-stack">
-            <h2>Technology Used</h2>
-            <ul>
-                <li>Illustrator</li>
-                <li>Figma</li>
-                <li>Protopie</li>
-            </ul>
+
+        <section class="container" id="proj-overview">
+            <h2>project overview</h2>
+            <div class="projectview-container">
+                <div class="overview-obj" id="challenge">
+                    <div data-aos="fade-up" data-aos-anchor-placement="center-bottom">
+                        <h3>The Challenge</h3>
+                        <p>We needed to design an interface as simple as possible while maximizing functionality, considering that users are professionals.</p>
+                    </div>
+                </div>
+                <div class="overview-obj" id="solution">
+                    <div data-aos="fade-up" data-aos-anchor-placement="center-bottom">
+                        <h3>The Solution</h3>
+                        <ul>
+                            <li>Creating a mockup of the app from an imagined persona
+                            </li>
+                            <li>Finding particiants to run user testing
+                            </li>
+                            <li>Generating multiple iterations of the mockup informed by user testing
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="overview-obj" id="role">
+                    <div data-aos="fade-up" data-aos-anchor-placement="center-bottom">
+                        <h3>My Role</h3>
+                        <p>UI/UX Designer</p>
+                    </div>
+                </div>
+                <div class="overview-obj" id="task">
+                    <div data-aos="fade-up" data-aos-anchor-placement="center-bottom">
+                        <h3>The Tasks</h3>
+                        <ul>
+                            <li>Provide avenues for professional musicians to access industry standard tools & services without obstructive barriers of connections or nepotism;
+                            </li>
+                            <li>Localize and centralize a otherwise inconsistent set of interactive and transactional processes between any  given industry professionals.</li>
+                            <li>Allow studio owners and professionals to re-establish a name for themselves within an industry hierarchy fractured and divided by a post-pandemic world.</li>
+                            <li>Set a precedent for a industry facet largely ignored and overlooked by the application world.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="overview-obj" id="tool">
+                    <div data-aos="fade-up" data-aos-anchor-placement="center-bottom">
+                        <h3>Tool Stack</h3>
+                        <ul>
+                            <li>Illustrator</li>
+                            <li>Figma</li>
+                            <li>Protopie</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="container" id="project-screenshots">
+            <h2>Project Screenshots</h2>
+            <div class="screenshot-grid">
+                <img src="../img/high.jpg" alt="Screenshot of mockup logic board">
+                <img src="../img/monitor1.jpeg" alt="Screenshot of app login page">
+                <img src="../img/monitor2.jpeg" alt="Screenshot of app interface">
+                <img src="../img/proj1users.jpg" alt="Screenshot 4">
+            </div>
+        </section>        
+
+        <section class="container" id="project-about">
+            <a href="https://www.figma.com/proto/3Yv4H7oFCk0FPm59FY16u3/Untitled?node-id=245%3A2&scaling=scale-down&page-id=91%3A3&starting-point-node-id=245%3A2&show-proto-sidebar=1"><h2>Take a look at the final mockup!</h2></a>
         </section>
     </main>
     <footer>
@@ -61,7 +113,11 @@
             </ul>
         </div>
     </footer>
-    
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+    // Script acquired online from Animate on Scroll
+    AOS.init();
+    </script>
 </body>
 </html>
 

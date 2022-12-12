@@ -106,14 +106,37 @@ hr {
   margin-bottom: 16px;
 }
 
+/*define project overview*/
+.projectview-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.overview-obj {
+  padding-top: 2em;
+  padding-bottom: 2em;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 60%;
+  min-width: 25%;
+}
+.overview-obj ul {
+  -webkit-padding-start: 0px;
+          padding-inline-start: 0px;
+}
+.overview-obj li {
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+
 /* define the styles for the project description */
-.project-description {
+#project-description {
   font-size: 16px;
   margin-bottom: 16px;
 }
 
 /* define the styles for the project screenshots section */
-.project-screenshots {
+#project-screenshots {
   margin-bottom: 16px;
 }
 
@@ -121,12 +144,12 @@ hr {
 .screenshot-grid {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 /* define the styles for the individual screenshots */
 .screenshot-grid img {
-  width: 300px;
-  height: 200px;
+  max-width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
   margin-right: 16px;
@@ -134,10 +157,17 @@ hr {
 }
 
 /* define the styles for the project tech stack section */
-.project-tech-stack {
+#project-about {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+#project-about a h2 {
+  color: #852239;
+}
+#project-about a h2:hover {
+  color: #b995a1;
+  transition-duration: 0.5s;
 }
 
 /*define img as a link*/
