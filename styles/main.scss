@@ -13,10 +13,34 @@ $accent_color_1:#b995a1;
     list-style-type: none;
 }
 
+h1 {
+    text-align: center;
+    font-size: 5em;
+}
+
+h2 {
+    font-size: 2.5em;
+}
+
+h3 {
+    font-size: 2em;
+    text-align: left;
+}
+
+p {
+    font-size: 1.5em;
+}
+
 // define universal list styling
 li a{
     font-weight: bold;
     color: $text_color_2;
+}
+
+li a:hover{
+    font-weight:bolder;
+    color: $accent_color_1;
+    transition-duration: 0.5s;
 }
 
 // define nav bar elements
@@ -37,12 +61,45 @@ a:hover img {
     transition-duration: 0.5s;
 }
 
+/* define style for horizontal line */
+hr {
+    border: none;
+    height: 1px;
+    width: 5%;
+    background-color: $accent_color_1;
+    box-shadow: 0 0px 10px 10px $accent_color_1;
+
+}
+
 /* define a container for the layout */
 .container {
+    margin-top: 10%;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 70%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+
+    #headshot{
+        max-width: 40%;
+    }
+}
+
+// define project container
+.project{
+    max-width: 100%;
+    img{
+        max-width: 100%;
+    }
+    a{
+        color: $text_color_1;
+    }
+    a:hover{
+        color: $text_color_2;
+        transition-duration: 0.5s;
+    }
 }
   
 /* define the styles for the project title */
@@ -93,8 +150,16 @@ a:hover img {
     align-items: center;
 }
 
+/*define img as a link*/
+.img-link-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 // define headshot styling
-.biopic img{
+.img-link-container img{
+    align-items: center;
     max-width: 35%;
     max-height: 35%;
 }
@@ -105,6 +170,10 @@ a:hover img {
     display: flex;
     flex-direction:row;
     align-items: center;
+}
+
+footer p {
+    font-size: 1em;
 }
 
 /* define a footer list attributes */
@@ -131,5 +200,9 @@ footer ul li {
     }
     p {
         font-weight: bold;
+    }
+    :hover {
+        color: $accent_color_1;
+        transition-duration: 0.5s;
     }
 }

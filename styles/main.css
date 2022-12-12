@@ -7,9 +7,33 @@
   list-style-type: none;
 }
 
+h1 {
+  text-align: center;
+  font-size: 5em;
+}
+
+h2 {
+  font-size: 2.5em;
+}
+
+h3 {
+  font-size: 2em;
+  text-align: left;
+}
+
+p {
+  font-size: 1.5em;
+}
+
 li a {
   font-weight: bold;
   color: #852239;
+}
+
+li a:hover {
+  font-weight: bolder;
+  color: #b995a1;
+  transition-duration: 0.5s;
 }
 
 nav {
@@ -28,12 +52,42 @@ a:hover img {
   transition-duration: 0.5s;
 }
 
+/* define style for horizontal line */
+hr {
+  border: none;
+  height: 1px;
+  width: 5%;
+  background-color: #b995a1;
+  box-shadow: 0 0px 10px 10px #b995a1;
+}
+
 /* define a container for the layout */
 .container {
+  margin-top: 10%;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 70%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+.container #headshot {
+  max-width: 40%;
+}
+
+.project {
+  max-width: 100%;
+}
+.project img {
+  max-width: 100%;
+}
+.project a {
+  color: #2f2f30;
+}
+.project a:hover {
+  color: #852239;
+  transition-duration: 0.5s;
 }
 
 /* define the styles for the project title */
@@ -86,7 +140,15 @@ a:hover img {
   align-items: center;
 }
 
-.biopic img {
+/*define img as a link*/
+.img-link-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.img-link-container img {
+  align-items: center;
   max-width: 35%;
   max-height: 35%;
 }
@@ -96,6 +158,10 @@ a:hover img {
   display: flex;
   flex-direction: row;
   align-items: center;
+}
+
+footer p {
+  font-size: 1em;
 }
 
 /* define a footer list attributes */
@@ -124,4 +190,8 @@ footer ul li {
 }
 .email p {
   font-weight: bold;
+}
+.email :hover {
+  color: #b995a1;
+  transition-duration: 0.5s;
 }/*# sourceMappingURL=main.css.map */
