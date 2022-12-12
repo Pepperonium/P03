@@ -1,0 +1,76 @@
+/* define a container for the layout */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* define the styles for the project title */
+.project-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 16px;
+}
+
+/* define the styles for the project image */
+.project-image {
+  width: 300px;
+  height: 200px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin-bottom: 16px;
+}
+
+/* define the styles for the project description */
+.project-description {
+  font-size: 16px;
+  margin-bottom: 16px;
+}
+
+/* define a container for the layout */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* define the styles for the project description section */
+.project-description {
+  margin-bottom: 16px;
+}
+
+/* define the styles for the project screenshots section */
+.project-screenshots {
+  margin-bottom: 16px;
+}
+
+/* define the styles for the screenshot grid */
+.screenshot-grid {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* define the styles for the individual screenshots */
+.screenshot-grid img {
+  width: 300px;
+  height: 200px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin-right: 16px;
+  margin-bottom: 16px;
+}
+
+/* define the styles for the project tech stack section */
+.project-tech-stack {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* define a footer for the layout */
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}/*# sourceMappingURL=main.css.map */
