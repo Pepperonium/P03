@@ -1,3 +1,33 @@
+/* define universal font */
+* {
+  background-color: #f0ece2;
+  box-sizing: border-box;
+  font-family: Roboto;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+li a {
+  font-weight: bold;
+  color: #852239;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+
+nav li {
+  padding: 1em;
+}
+
+a:hover img {
+  opacity: 0.5;
+  transition-duration: 0.5s;
+}
+
 /* define a container for the layout */
 .container {
   display: flex;
@@ -25,18 +55,6 @@
 /* define the styles for the project description */
 .project-description {
   font-size: 16px;
-  margin-bottom: 16px;
-}
-
-/* define a container for the layout */
-.container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-/* define the styles for the project description section */
-.project-description {
   margin-bottom: 16px;
 }
 
@@ -68,9 +86,42 @@
   align-items: center;
 }
 
+.biopic img {
+  max-width: 35%;
+  max-height: 35%;
+}
+
 /* define a footer for the layout */
 .footer {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
+}
+
+/* define a footer list attributes */
+footer ul {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  -webkit-padding-start: 0px;
+          padding-inline-start: 0px;
+}
+
+/* define a footer list attributes */
+footer ul li {
+  margin-left: 2em;
+  margin-right: 2em;
+}
+
+/* define email portal attributes */
+.email {
+  margin-top: 3vh;
+}
+.email a {
+  text-decoration: none;
+  color: #852239;
+  font-weight: bold;
+}
+.email p {
+  font-weight: bold;
 }/*# sourceMappingURL=main.css.map */

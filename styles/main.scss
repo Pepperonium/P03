@@ -1,3 +1,42 @@
+$font_family_1: Roboto;
+$text_color_1: #2f2f30;
+$text_color_2: #852239;
+$background_color_1: #f0ece2;
+$accent_color_1:#b995a1;
+
+/* define universal font */
+* {
+    background-color: $background_color_1;
+    box-sizing: border-box;
+    font-family: $font_family_1;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+// define universal list styling
+li a{
+    font-weight: bold;
+    color: $text_color_2;
+}
+
+// define nav bar elements
+nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+nav li {
+    padding: 1em;
+}
+
+// define img hover
+a:hover img {
+    opacity: 0.5;
+    transition-duration: 0.5s;
+}
+
 /* define a container for the layout */
 .container {
     display: flex;
@@ -8,69 +47,89 @@
   
 /* define the styles for the project title */
 .project-title {
-font-size: 24px;
-font-weight: bold;
-margin-bottom: 16px;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 16px;
 }
 
 /* define the styles for the project image */
 .project-image {
-width: 300px;
-height: 200px;
-object-fit: cover;
-margin-bottom: 16px;
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    margin-bottom: 16px;
 }
 
 /* define the styles for the project description */
 .project-description {
-font-size: 16px;
-margin-bottom: 16px;
-}
-
-
-/* define a container for the layout */
-.container {
-display: flex;
-flex-direction: column;
-align-items: center;
-}
-
-/* define the styles for the project description section */
-.project-description {
-margin-bottom: 16px;
+    font-size: 16px;
+    margin-bottom: 16px;
 }
 
 /* define the styles for the project screenshots section */
 .project-screenshots {
-margin-bottom: 16px;
+    margin-bottom: 16px;
 }
 
 /* define the styles for the screenshot grid */
 .screenshot-grid {
-display: flex;
-flex-wrap: wrap;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 /* define the styles for the individual screenshots */
 .screenshot-grid img {
-width: 300px;
-height: 200px;
-object-fit: cover;
-margin-right: 16px;
-margin-bottom: 16px;
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    margin-right: 16px;
+    margin-bottom: 16px;
 }
 
 /* define the styles for the project tech stack section */
 .project-tech-stack {
-display: flex;
-flex-direction: column;
-align-items: center;
-}
-
-/* define a footer for the layout */
-.footer {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-  
+
+// define headshot styling
+.biopic img{
+    max-width: 35%;
+    max-height: 35%;
+}
+
+
+/* define a footer for the layout */
+.footer {
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+}
+
+/* define a footer list attributes */
+footer ul {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    padding-inline-start: 0px;
+}
+
+/* define a footer list attributes */
+footer ul li {
+    margin-left:2em;
+    margin-right: 2em;
+  }
+
+  /* define email portal attributes */
+.email {
+    margin-top: 3vh;
+    a {
+        text-decoration: none;
+        color: $text_color_2;
+        font-weight: bold;
+    }
+    p {
+        font-weight: bold;
+    }
+}
